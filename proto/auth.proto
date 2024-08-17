@@ -20,8 +20,8 @@ message FindOneUserDto {
 }
 
 message PaginationDto {
-  string page = 1;
-  string size = 2;
+  int32 page = 1;
+  int32 skip = 2;
 }
 
 message Empty {}

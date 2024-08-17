@@ -20,8 +20,8 @@ export interface FindOneUserDto {
 }
 
 export interface PaginationDto {
-  page: string;
-  size: string;
+  page: number;
+  skip: number;
 }
 
 export interface Empty {}
