@@ -7,10 +7,12 @@ import {
   UpdateUserDto,
   Users,
   UserServiceController,
+  UserServiceControllerMethods,
 } from '@app/common';
 import { Observable } from 'rxjs';
 
 @Controller()
+@UserServiceControllerMethods()
 export class UserController implements UserServiceController {
   constructor(private readonly userService: UserService) {}
 
